@@ -58,7 +58,7 @@ class Multiplayer:
             del self.msgcache[0]
             return toreturn
     def send_message(self,player,message):
-        self.send_command("c",message,p=player)
+        self.send_command("m",message,p=player)
     def main_loop(self):
         cmd = self.receive_command()
         if cmd:
