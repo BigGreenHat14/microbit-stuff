@@ -124,7 +124,7 @@ if __name__ == "__main__":
         if button_a.is_pressed():
             mp.send_request(2,"down","a",timeout=0.1)
             while button_a.is_pressed(): mp.main_loop()
-            mp.send_request(2,"up",timeout=100)
+            mp.send_request(2,"up",timeout=0.1)
         elif button_b.is_pressed():
             mp.send_request(2,"down","b",timeout=0.1)
             while button_b.is_pressed(): mp.main_loop()
